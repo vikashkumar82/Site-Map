@@ -1,0 +1,5 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapDescriptionHelperModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+@if (Model.CurrentNode != null && !string.IsNullOrEmpty(Model.CurrentNode.Description)) {@Model.CurrentNode.Description}

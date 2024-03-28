@@ -1,0 +1,169 @@
+﻿body {
+}
+
+span.icon-logo i {
+    color: white;
+}
+
+span.icon-logo {
+    background: #9E9E9E;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+}
+
+.logo-centre {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#resulturl {
+    height: 50vh !important;
+    width: 100% !important;
+    overflow-x: hidden;
+}
+
+.sitemap-url-section.mt-5.p-4 {
+    border: 1px solid #D2D6D8;
+    border-radius: 5px;
+}
+
+.sitemap-content.p-3 {
+    border: 1px solid #D2D6D8;
+    border-radius: 5px;
+    background: #F7FAFC;
+    box-shadow: 0px 0px 14px 12px #F7FAFC;
+}
+
+/*.button-one {
+    text-align: center;
+}
+*/
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.broken-links {
+    border: 1px solid #D2D6D8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px 12px #F7FAFC;
+}
+
+.result-icon p {
+    font-size: x-large;
+}
+
+textarea#resultTextBox {
+    height: 500px;
+    padding: 15px 0px 0px 20px;
+}
+
+div#result_div {
+    border: 1px solid #D2D6D8;
+    border-radius: 5px;
+   
+}
+
+.counter-section {
+    display: flex;
+   
+}
+
+
+.sitemap-content.mt-2.p-3 p {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+li {
+    font-size: small;
+}
+
+
+
+div#popup {
+    position: absolute;
+    width: 673px;
+    background: white;
+    padding: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 15px;
+    border-bottom: 3px solid #FE9C3A;
+}
+
+input#btn_close {
+    height: 25px;
+    background: aliceblue;
+    padding: 4px;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+}
+
+.counter-cards1 {
+    padding: 7px;
+    border-bottom-left-radius: 10px;
+}
+.counter-cards2 {
+    padding: 7px;
+}
+.counter-cards3 {
+    padding: 7px;
+    border-bottom-right-radius: 10px;
+}
+
+span.same {
+    color: #fff !important;
+    background: #99cc33 !important;
+    padding: 0px 5px 1px 5px !important;
+    border-radius: 3px;
+}
+
+.same span {
+    font-size: 14px;
+}
+
+input#btn_popup {
+    border: none;
+    background: no-repeat;
+    color: #0d6efd;
+}
+
+s
+
+@media only screen and (max-width: 767px) {
+
+    .input#btn_popup {
+        margin-left: 75px;
+    }
+
+    .input#generateButton {
+        margin-top: 33px;
+        margin-left: -28px;
+    }
+
+    .div#resulturl {
+        height: 450px !important;
+    }
+
+    .textarea#resultTextBox {
+        height: 450px;
+    }
+}

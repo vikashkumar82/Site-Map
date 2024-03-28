@@ -1,0 +1,603 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Google.Apis.Webmasters.v3</name>
+    </assembly>
+    <members>
+        <member name="T:Google.Apis.Webmasters.v3.WebmastersService">
+            <summary>The Webmasters Service.</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.WebmastersService.Version">
+            <summary>The API version.</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.WebmastersService.DiscoveryVersionUsed">
+            <summary>The discovery version used to generate this service.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.WebmastersService.#ctor">
+            <summary>Constructs a new service.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.WebmastersService.#ctor(Google.Apis.Services.BaseClientService.Initializer)">
+            <summary>Constructs a new service.</summary>
+            <param name="initializer">The service initializer.</param>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersService.Features">
+            <summary>Gets the service supported features.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersService.Name">
+            <summary>Gets the service name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersService.BaseUri">
+            <summary>Gets the service base URI.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersService.BasePath">
+            <summary>Gets the service base path.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersService.BatchUri">
+            <summary>Gets the batch base URI; <c>null</c> if unspecified.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersService.BatchPath">
+            <summary>Gets the batch base path; <c>null</c> if unspecified.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.WebmastersService.Scope">
+            <summary>Available OAuth 2.0 scopes for use with the Search Console API.</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.WebmastersService.Scope.Webmasters">
+            <summary>View and manage Search Console data for your verified sites</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.WebmastersService.Scope.WebmastersReadonly">
+            <summary>View Search Console data for your verified sites</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.WebmastersService.ScopeConstants">
+            <summary>Available OAuth 2.0 scope constants for use with the Search Console API.</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.WebmastersService.ScopeConstants.Webmasters">
+            <summary>View and manage Search Console data for your verified sites</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.WebmastersService.ScopeConstants.WebmastersReadonly">
+            <summary>View Search Console data for your verified sites</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersService.Searchanalytics">
+            <summary>Gets the Searchanalytics resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersService.Sitemaps">
+            <summary>Gets the Sitemaps resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersService.Sites">
+            <summary>Gets the Sites resource.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1">
+            <summary>A base abstract class for Webmasters requests.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new WebmastersBaseServiceRequest instance.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.Alt">
+            <summary>Data format for the response.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.AltEnum">
+            <summary>Data format for the response.</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.AltEnum.Json">
+            <summary>Responses with Content-Type of application/json</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.Fields">
+            <summary>Selector specifying which fields to include in a partial response.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.Key">
+            <summary>
+            API key. Your API key identifies your project and provides you with API access, quota, and reports. Required
+            unless you provide an OAuth 2.0 token.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.OauthToken">
+            <summary>OAuth 2.0 token for the current user.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.PrettyPrint">
+            <summary>Returns response with indentations and line breaks.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.QuotaUser">
+            <summary>
+            An opaque string that represents a user for quota purposes. Must not exceed 40 characters.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.UserIp">
+            <summary>Deprecated. Please use quotaUser instead.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.WebmastersBaseServiceRequest`1.InitParameters">
+            <summary>Initializes Webmasters parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SearchanalyticsResource">
+            <summary>The "searchanalytics" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.SearchanalyticsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SearchanalyticsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SearchanalyticsResource.Query(Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest,System.String)">
+            <summary>
+            Query your data with filters and parameters that you define. Returns zero or more rows grouped by the row
+            keys that you define. You must define a date range of one or more days.  When date is one of the group by
+            values, any days without data are omitted from the result list. If you need to know which days have data,
+            issue a broad date range query grouped by date for any metric, and see which day rows are returned.
+            </summary>
+            <param name="body">The body of the request.</param>
+            <param name="siteUrl">The site's URL, including protocol. For example: http://www.example.com/</param>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SearchanalyticsResource.QueryRequest">
+            <summary>
+            Query your data with filters and parameters that you define. Returns zero or more rows grouped by the row
+            keys that you define. You must define a date range of one or more days.  When date is one of the group by
+            values, any days without data are omitted from the result list. If you need to know which days have data,
+            issue a broad date range query grouped by date for any metric, and see which day rows are returned.
+            </summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SearchanalyticsResource.QueryRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest,System.String)">
+            <summary>Constructs a new Query request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SearchanalyticsResource.QueryRequest.SiteUrl">
+            <summary>The site's URL, including protocol. For example: http://www.example.com/</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SearchanalyticsResource.QueryRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SearchanalyticsResource.QueryRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SearchanalyticsResource.QueryRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SearchanalyticsResource.QueryRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SearchanalyticsResource.QueryRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SearchanalyticsResource.QueryRequest.InitParameters">
+            <summary>Initializes Query parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitemapsResource">
+            <summary>The "sitemaps" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.SitemapsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.Delete(System.String,System.String)">
+            <summary>Deletes a sitemap from this site.</summary>
+            <param name="siteUrl">The site's URL, including protocol. For example: http://www.example.com/</param>
+            <param name="feedpath">
+            The URL of the actual sitemap. For example: http://www.example.com/sitemap.xml
+            </param>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitemapsResource.DeleteRequest">
+            <summary>Deletes a sitemap from this site.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.DeleteRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new Delete request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.DeleteRequest.SiteUrl">
+            <summary>The site's URL, including protocol. For example: http://www.example.com/</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.DeleteRequest.Feedpath">
+            <summary>The URL of the actual sitemap. For example: http://www.example.com/sitemap.xml</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.DeleteRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.DeleteRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.DeleteRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.DeleteRequest.InitParameters">
+            <summary>Initializes Delete parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.Get(System.String,System.String)">
+            <summary>Retrieves information about a specific sitemap.</summary>
+            <param name="siteUrl">The site's URL, including protocol. For example: http://www.example.com/</param>
+            <param name="feedpath">
+            The URL of the actual sitemap. For example: http://www.example.com/sitemap.xml
+            </param>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitemapsResource.GetRequest">
+            <summary>Retrieves information about a specific sitemap.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.GetRequest.SiteUrl">
+            <summary>The site's URL, including protocol. For example: http://www.example.com/</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.GetRequest.Feedpath">
+            <summary>The URL of the actual sitemap. For example: http://www.example.com/sitemap.xml</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.List(System.String)">
+            <summary>
+            Lists the sitemaps-entries submitted for this site, or included in the sitemap index file (if sitemapIndex
+            is specified in the request).
+            </summary>
+            <param name="siteUrl">The site's URL, including protocol. For example: http://www.example.com/</param>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitemapsResource.ListRequest">
+            <summary>
+            Lists the sitemaps-entries submitted for this site, or included in the sitemap index file (if sitemapIndex
+            is specified in the request).
+            </summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.ListRequest.SiteUrl">
+            <summary>The site's URL, including protocol. For example: http://www.example.com/</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.ListRequest.SitemapIndex">
+            <summary>A URL of a site's sitemap index. For example: http://www.example.com/sitemapindex.xml</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.Submit(System.String,System.String)">
+            <summary>Submits a sitemap for a site.</summary>
+            <param name="siteUrl">The site's URL, including protocol. For example: http://www.example.com/</param>
+            <param name="feedpath">
+            The URL of the sitemap to add. For example: http://www.example.com/sitemap.xml
+            </param>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitemapsResource.SubmitRequest">
+            <summary>Submits a sitemap for a site.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.SubmitRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new Submit request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.SubmitRequest.SiteUrl">
+            <summary>The site's URL, including protocol. For example: http://www.example.com/</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.SubmitRequest.Feedpath">
+            <summary>The URL of the sitemap to add. For example: http://www.example.com/sitemap.xml</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.SubmitRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.SubmitRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitemapsResource.SubmitRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitemapsResource.SubmitRequest.InitParameters">
+            <summary>Initializes Submit parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitesResource">
+            <summary>The "sites" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Webmasters.v3.SitesResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.Add(System.String)">
+            <summary>Adds a site to the set of the user's sites in Search Console.</summary>
+            <param name="siteUrl">The URL of the site to add.</param>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitesResource.AddRequest">
+            <summary>Adds a site to the set of the user's sites in Search Console.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.AddRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Add request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.AddRequest.SiteUrl">
+            <summary>The URL of the site to add.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.AddRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.AddRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.AddRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.AddRequest.InitParameters">
+            <summary>Initializes Add parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.Delete(System.String)">
+            <summary>Removes a site from the set of the user's Search Console sites.</summary>
+            <param name="siteUrl">
+            The URI of the property as defined in Search Console. Examples: http://www.example.com/ or
+            android-app://com.example/ Note: for property-sets, use the URI that starts with sc-set: which is used in
+            Search Console URLs.
+            </param>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitesResource.DeleteRequest">
+            <summary>Removes a site from the set of the user's Search Console sites.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.DeleteRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Delete request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.DeleteRequest.SiteUrl">
+            <summary>
+            The URI of the property as defined in Search Console. Examples: http://www.example.com/ or
+            android-app://com.example/ Note: for property-sets, use the URI that starts with sc-set: which is used
+            in Search Console URLs.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.DeleteRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.DeleteRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.DeleteRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.DeleteRequest.InitParameters">
+            <summary>Initializes Delete parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.Get(System.String)">
+            <summary>Retrieves information about specific site.</summary>
+            <param name="siteUrl">
+            The URI of the property as defined in Search Console. Examples: http://www.example.com/ or
+            android-app://com.example/ Note: for property-sets, use the URI that starts with sc-set: which is used in
+            Search Console URLs.
+            </param>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitesResource.GetRequest">
+            <summary>Retrieves information about specific site.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.GetRequest.SiteUrl">
+            <summary>
+            The URI of the property as defined in Search Console. Examples: http://www.example.com/ or
+            android-app://com.example/ Note: for property-sets, use the URI that starts with sc-set: which is used
+            in Search Console URLs.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.List">
+            <summary>Lists the user's Search Console sites.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.SitesResource.ListRequest">
+            <summary>Lists the user's Search Console sites.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.ListRequest.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.SitesResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Webmasters.v3.SitesResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.ApiDataRow.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.ApiDimensionFilter.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.ApiDimensionFilterGroup.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.AggregationType">
+            <summary>
+            [Optional; Default is "auto"] How data is aggregated. If aggregated by property, all data for the same
+            property is aggregated; if aggregated by page, all data is aggregated by canonical URI. If you filter or
+            group by page, choose AUTO; otherwise you can aggregate either by property or by page, depending on how you
+            want your data calculated; see  the help documentation to learn how data is calculated differently by site
+            versus by page.  Note: If you group or filter by page, you cannot aggregate by property.  If you specify any
+            value other than AUTO, the aggregation type in the result will match the requested type, or if you request
+            an invalid type, you will get an error. The API will never change your aggregation type if the requested
+            type is invalid.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.DataState">
+            <summary>
+            [Optional] If "all" (case-insensitive), data will include fresh data. If "final" (case-insensitive) or if
+            this parameter is omitted, the returned data will include only finalized data.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.DimensionFilterGroups">
+            <summary>
+            [Optional] Zero or more filters to apply to the dimension grouping values; for example, 'query contains
+            "buy"' to see only data where the query string contains the substring "buy" (not case-sensitive). You can
+            filter by a dimension without grouping by it.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.Dimensions">
+            <summary>
+            [Optional] Zero or more dimensions to group results by. Dimensions are the group-by values in the Search
+            Analytics page. Dimensions are combined to create a unique row key for each row. Results are grouped in the
+            order that you supply these dimensions.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.EndDate">
+            <summary>
+            [Required] End date of the requested date range, in YYYY-MM-DD format, in PST (UTC - 8:00). Must be greater
+            than or equal to the start date. This value is included in the range.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.RowLimit">
+            <summary>
+            [Optional; Default is 1000] The maximum number of rows to return. Must be a number from 1 to 5,000
+            (inclusive).
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.SearchType">
+            <summary>[Optional; Default is "web"] The search type to filter for.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.StartDate">
+            <summary>
+            [Required] Start date of the requested date range, in YYYY-MM-DD format, in PST time (UTC - 8:00). Must be
+            less than or equal to the end date. This value is included in the range.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.StartRow">
+            <summary>
+            [Optional; Default is 0] Zero-based index of the first row in the response. Must be a non-negative number.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryResponse">
+            <summary>
+            A list of rows, one per result, grouped by key. Metrics in each row are aggregated for all data grouped by that
+            key either by page or property, as specified by the aggregation type parameter.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryResponse.ResponseAggregationType">
+            <summary>How the results were aggregated.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryResponse.Rows">
+            <summary>A list of rows grouped by the key values in the order given in the query.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SearchAnalyticsQueryResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.Data.SitemapsListResponse">
+            <summary>List of sitemaps.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SitemapsListResponse.Sitemap">
+            <summary>Contains detailed information about a specific URL submitted as a sitemap.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SitemapsListResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.Data.SitesListResponse">
+            <summary>List of sites with access level information.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SitesListResponse.SiteEntry">
+            <summary>
+            Contains permission level information about a Search Console site. For more information, see Permissions in
+            Search Console.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.SitesListResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.Data.WmxSite">
+            <summary>
+            Contains permission level information about a Search Console site. For more information, see  Permissions in
+            Search Console.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSite.PermissionLevel">
+            <summary>The user's permission level for the site.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSite.SiteUrl">
+            <summary>The URL of the site.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSite.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.Data.WmxSitemap">
+            <summary>Contains detailed information about a specific URL submitted as a sitemap.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.Contents">
+            <summary>The various content types in the sitemap.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.Errors">
+            <summary>
+            Number of errors in the sitemap. These are issues with the sitemap itself that need to be fixed before it
+            can be processed correctly.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.IsPending">
+            <summary>If true, the sitemap has not been processed.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.IsSitemapsIndex">
+            <summary>If true, the sitemap is a collection of sitemaps.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.LastDownloadedRaw">
+            <summary>
+            Date &amp;amp; time in which this sitemap was last downloaded. Date format is in RFC 3339 format
+            (yyyy-mm-dd).
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.LastDownloaded">
+            <summary><seealso cref="T:System.DateTime"/> representation of <see cref="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.LastDownloadedRaw"/>.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.LastSubmittedRaw">
+            <summary>
+            Date &amp;amp; time in which this sitemap was submitted. Date format is in RFC 3339 format (yyyy-mm-dd).
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.LastSubmitted">
+            <summary><seealso cref="T:System.DateTime"/> representation of <see cref="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.LastSubmittedRaw"/>.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.Path">
+            <summary>The url of the sitemap.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.Type">
+            <summary>The type of the sitemap. For example: rssFeed.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.Warnings">
+            <summary>
+            Number of warnings for the sitemap. These are generally non-critical issues with URLs in the sitemaps.
+            </summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemap.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Webmasters.v3.Data.WmxSitemapContent">
+            <summary>Information about the various content types in the sitemap.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemapContent.Indexed">
+            <summary>The number of URLs from the sitemap that were indexed (of the content type).</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemapContent.Submitted">
+            <summary>The number of URLs in the sitemap (of the content type).</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemapContent.Type">
+            <summary>The specific type of content in this sitemap. For example: web.</summary>
+        </member>
+        <member name="P:Google.Apis.Webmasters.v3.Data.WmxSitemapContent.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+    </members>
+</doc>

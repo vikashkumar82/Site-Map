@@ -1,0 +1,19 @@
+﻿
+@media only screen and (max-width: 767px) {
+
+    input#btn_popup {
+        margin-left: 75px;
+    }
+    input#generateButton {
+        margin-top: 33px;
+        margin-left: -28px;
+    }
+
+    div#resulturl {
+        height: 450px !important;
+    }
+
+    textarea#resultTextBox {
+        height: 450px;
+    }
+}

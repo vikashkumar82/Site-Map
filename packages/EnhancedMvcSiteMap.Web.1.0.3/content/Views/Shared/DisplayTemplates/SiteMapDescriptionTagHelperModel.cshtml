@@ -1,0 +1,9 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapDescriptionTagHelperModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+@if (Model.CurrentNode != null && !string.IsNullOrEmpty(Model.CurrentNode.Description)) {
+<meta name="description" content="@Model.CurrentNode.Description" />
+<meta itemprop="description" content="@Model.CurrentNode.Description" />
+<meta property="og:description" content="@Model.CurrentNode.Description" />
+}
